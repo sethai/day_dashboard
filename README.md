@@ -1,5 +1,9 @@
 # day_dashboard
 
+Day dashboard displays useful informations for the current day. 
+
+Project to kickoff vue learning.
+
 ## Project setup
 ```
 npm install
