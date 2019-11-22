@@ -18,7 +18,7 @@
             </mdb-col>
             <mdb-col col="6">
               <div class="d-flex justify-content-center">
-                <mdb-btn class="m-10" outline="primary">Localize</mdb-btn>
+                <mdb-btn class="m-10" outline="primary">Locate</mdb-btn>
               </div>
             </mdb-col>
           </mdb-row>
