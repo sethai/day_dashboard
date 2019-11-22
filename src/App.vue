@@ -1,18 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <mdb-container>
+    <mdb-row>
+      <mdb-col>
+        <h4 class="text-center h4-responsive font-weight-bold align-middle">Welcome to your dashboard</h4>
+      </mdb-col>
+      <mdb-col>
+        <settings/>
+      </mdb-col>
+    </mdb-row>
+    <mdb-row>
+      <mdb-col xs="12" md="7" class="order-md-1">
+        <p>todo-list</p>
+      </mdb-col>
+      <mdb-col xs="12" md="5" class="order-md-12">
+        <p>all other stuff</p>
+      </mdb-col>
+    </mdb-row>
+  </mdb-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import {
+  mdbContainer,
+  mdbRow,
+  mdbCol,
+} from "mdbvue";
+import settings from "@/components/settings";
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
+    settings,
+    mdbContainer,
+    mdbRow,
+    mdbCol,
+  },
 }
 </script>
 
