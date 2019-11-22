@@ -6,25 +6,25 @@
         <mdb-modal-title tag="h4" class="w-100 text-center font-weight-bold">Settings</mdb-modal-title>
       </mdb-modal-header>
       <mdb-modal-body>
-        <form class="mx-3 gray-text">
-          <mdb-row>
-            <mdb-col col="6">
+        <mdb-row>
+          <mdb-col col="6">
+            <form class="mx-3 gray-text">
               <mdb-input 
                 name="city"
                 label="City"
                 type="text"
                 v-model="city"
               />
-            </mdb-col>
-            <mdb-col col="6">
-              <div class="d-flex justify-content-center">
-                <mdb-btn class="m-10" outline="primary">Locate</mdb-btn>
-              </div>
-            </mdb-col>
-          </mdb-row>
-          <b-form-radio v-model="temperature" name="setting-temp" value="Ctemp">Celsius</b-form-radio>
-          <b-form-radio v-model="temperature" name="setting-temp" value="Btemp">Fahrenheit</b-form-radio>
-        </form>
+              <b-form-radio v-model="temperature" name="setting-temp" value="Ctemp">Celsius</b-form-radio>
+              <b-form-radio v-model="temperature" name="setting-temp" value="Btemp">Fahrenheit</b-form-radio>
+            </form>
+          </mdb-col>
+          <mdb-col col="6">
+            <div class="d-flex justify-content-center">
+              <mdb-btn class="m-10" outline="primary" @click.native="city = Warsaw">Locate</mdb-btn>
+            </div>
+          </mdb-col>
+        </mdb-row>
       </mdb-modal-body>
       <mdb-modal-footer>
       </mdb-modal-footer>
@@ -65,7 +65,7 @@ export default {
     return{
       modal: false,
       temperature: "Ctemp",
-      city: "Warsaw"
+      city: "Poland"
     }
   }
 }
